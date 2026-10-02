@@ -1,54 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifolio - Miguel Angelo</title>
-</head>
-<body>
-  <header>
-    <h1>Miguel Angelo</h1>
-    
-    <nav>
-      <a href="sobre">Sobre</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio - Miguel Angelo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Miguel Angelo</h1>
+
+      <nav>
+        <a href="sobre">Sobre</a>
         <a href="conhecimentos">Conhecimentos</a>
         <a href="projetos">Projetos</a>
         <a href="conversa">Vamos conversar</a>
-    </nav>
+      </nav>
 
-    <main>
+      <main>
+        <section class="inicio">
+          <p>disponivel para oportunidades</p>
+          <h2>Olá, eu sou Miguel.</h2>
+          <p>
+            Estudante de Engenharia de Software com interesse em criar
+            experiências digitais claras, funcionais e bem construídas.
+          </p>
+          <a href="projetos">Ver meus projetos</a>
+        </section>
 
-      <section class="inicio">
-        <p>disponivel para oportunidades</p>
-        <h2>Olá, eu sou Miguel.</h2>
-        <p>Estudante de Engenharia de Software com interesse em criar experiências digitais claras, funcionais e bem construídas.</p>
-        <a href="projetos">Ver meus projetos</a>
-      </section>
+        <section id="sobre">
+          <h2>01 - sobre mim</h2>
+          <p>
+            Curiosidade, dedicação e vontade de transformar conhecimento em
+            soluções reais.
+          </p>
+          <p>
+            Estou no início da jornada, mas já sei aonde quero chegar: criar
+            tecnologia que faça sentido para as pessoas.
+          </p>
+          <p>
+            Curso Engenharia de Software e busco minha primeira oportunidade de
+            estágio ou posição inicial em desenvolvimento front-end.
+          </p>
+          <p>
+            Quero aplicar meus conhecimentos, evoluir tecnicamente e contribuir
+            de verdade com uma equipe que valorize aprendizado e boas ideias.
+          </p>
+        </section>
 
-      <section id="sobre">
-        <h2>01 - sobre mim</h2>
-        <p>Curiosidade, dedicação e vontade de transformar conhecimento em soluções reais.</p>
-        <p>Estou no início da jornada, mas já sei aonde quero chegar: criar tecnologia que faça sentido para as pessoas.</p>
-        <p>Curso Engenharia de Software e busco minha primeira oportunidade de estágio ou posição inicial em desenvolvimento front-end.</p>
-        <p>Quero aplicar meus conhecimentos, evoluir tecnicamente e contribuir de verdade com uma equipe que valorize aprendizado e boas ideias.</p>
-      </section>
+        <section id="conhecimentos">
+          <h2>02 - conhecimentos</h2>
 
-      <section id="conhecimentos">
-        <h2>02 - conhecimentos</h2>
-      </section>
+          <table>
+            <thead>
+              <tr>
+                <th>Tecnologia</th>
+                <th>Onde aplico</th>
+                <th>Nivel</th>
+              </tr>
+            </thead>
 
-      <section id="projetos">
-        <h2>03 - projetos</h2>
-      </section>
+            <tbody>
+              <tr>
+                <td>HTML5</td>
+                <td>Estrutura de pagina</td>
+                <td>Intermediario</td>
+              </tr>
 
-      <section id="conversa">
-        <h2>04 - contato</h2>
-        <h3>Vamos criar algo juntos?</h3>
-        <p>Estou aberto a oportunidades, colaborações e boas conversas sobre tecnologia.</p>
-      </section>
+              <tr>
+                <td>CSS</td>
+                <td>Estilização visual</td>
+                <td>iniciante</td>
+              </tr>
 
-    </main>
+              <tr>
+                <td>JavaScript</td>
+                <td>Interatividade</td>
+                <td>Iniciante</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-  </header>
-</body>
+        <section id="projetos">
+          <h2>03 - projetos</h2>
+
+          <article>
+            <h3>Meu portifolio Pessoal</h3>
+            <p>Projeto em desenvolvimento para apresentar meus conhecimento</p>
+            <p>Tecnologias: HTML5, CSS</p>
+            <a href="https://github.com/MiguelAngelosls/projeto-portif-lio"
+              >Ver repositório</a
+            >
+          </article>
+
+          <article>
+            <h2>Informações extras</h2>
+
+            <p>Objetivo atual: Desenvolver meus primeiros projetos Front-End</p>
+            <ul>
+              <li><a href="https://github.com/MiguelAngelosls">GitHub</a></li>
+              <li>
+                <a href="www.linkedin.com/in/miguelangelosls">linkedin</a>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="conversa">
+          <h2>04 - contato</h2>
+          <h3>Vamos criar algo juntos?</h3>
+          <p>
+            Estou aberto a oportunidades, colaborações e boas conversas sobre
+            tecnologia.
+          </p>
+
+          <form>
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" />
+
+            <label for="email">Seu e-mail:</label>
+            <input type="text" id="email" name="email" />
+
+            <label for="mensagem">Deixe sua mensagem:</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+          </form>
+        </section>
+      </main>
+    </header>
+  </body>
 </html>
